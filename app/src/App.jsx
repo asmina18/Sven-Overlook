@@ -3,7 +3,7 @@ import { MainLayout } from "./layout/MainLayout/MainLayout"
 import { HomePage } from "./pages/HomePage/HomePage";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
 import { Login } from "./pages/LoginPage/LoginPage";
-import { HotelPage } from "./pages/HotelPage/HotelPage";
+import { HotelDestinationPage } from "./pages/HotelDestinationPage/HotelDestinationPage";
 import { RoomPage } from "./pages/RoomPage/Roompage";
 import { ReservationPage } from "./pages/ReservationPage/ReservationPage";
 
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/hotel" element={<HotelPage />} />
+            <Route path="/hotel" element={<HotelDestinationPage />} />
             <Route path="/room" element={<RoomPage />} />
             <Route path="/reservation" element={<ReservationPage />} />
             <Route path="/*" element={<ErrorPage />} />
