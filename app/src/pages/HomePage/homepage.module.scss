@@ -1,0 +1,31 @@
+.cardCantainer {
+    width: 100%;
+    border-radius: 3px solid red;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--white);
+    
+    figcaption {
+        h4 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+    }
+}
+
+
+.hotelCard {
+    width: 40%;
+    // height: 40%;
+
+    img {
+        width: 50%;
+    }
+}

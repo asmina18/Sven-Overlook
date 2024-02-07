@@ -26,7 +26,7 @@ export function Header() {
 
         return () => clearInterval(interval); 
     }, [slideshow.length]);
-    console.log("slideshow", slideshow);
+    // console.log("slideshow", slideshow);
     return (
         <>
             <div className={style.imageContainer}>

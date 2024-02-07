@@ -1,0 +1,58 @@
+@import '../../GlobalStyle.module.scss';
+
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  padding: 0.5rem 0rem;
+  background-color: var(--white);
+
+  h2 {
+    font-size: 1em;
+    color:var(--gray-70);
+    font-weight: 500;
+  }
+
+  .footerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    ul {
+      display: flex;
+
+      li {
+        list-style: none;
+        margin: 0.5rem;
+
+        a {
+          text-decoration: none;
+          color:var(--gray-70);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+
+    h2 {
+      padding: 1rem;
+    }
+
+    .footerNav {
+      ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+      }
+    }
+  }
+}

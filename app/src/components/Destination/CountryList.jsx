@@ -6,12 +6,13 @@ export const CountryList = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:4000/destinations')
+    fetch('http://localhost:4000/destinations') //​‌‍‌⁡⁢⁣⁢ mne nado zakinut selectedcontry  i ne zabud dobavit i proverit ⁡​
       .then(response => response.json())
       .then(data => setCountries(data))
       .catch(error => console.error('Error', error));
   }, []);
 
+  console.log("data",countries);
   return (
     <div>
       <ul>
