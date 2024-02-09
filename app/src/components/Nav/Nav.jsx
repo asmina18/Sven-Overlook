@@ -23,7 +23,7 @@ export const Nav = () => {
                     <NavLink to="/hotel" style={activeStyle}>HOTELLER & DESTINATIONER</NavLink>
                     <NavLink to="/room" style={activeStyle}> VÆRELSE</NavLink>
                     <NavLink to="/reservation" style={activeStyle}> RESERVATION</NavLink>
-                    <NavLink to="/login" style={activeStyle}>Login</NavLink>
+                    <NavLink to="/login" style={activeStyle}>LOGIN</NavLink>
                 </ul>
             </nav>
         </>

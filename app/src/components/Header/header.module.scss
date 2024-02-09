@@ -1,20 +1,20 @@
 
 .imageContainer {
-    width: 100%; // Занимать всю ширину родительского элемента
-    overflow: hidden; // Скрыть все, что выходит за границы
-
-    .imageWrapper {
-        width: auto;
-        height: 50%; // Фиксированная высота в пикселях
-    }
-    img {
-        width: 100%; // Занимать всю ширину .imageWrapper
-        // height: 50%; // Высота будет автоматически рассчитываться, чтобы сохранить пропорции изображения
-        object-fit: cover; // Это свойство позволяет изображению заполнять элемент, обрезая лишнее
-      }
-      
-}
-
-
-
+    width: 100%; /* Full bredde */
+    overflow: hidden; /* Skjul overflødig innhold */
+  }
+  
+  .imageWrapper {
+    width: 100%; /* Full bredde */
+    height: 500px; /* Spesifikk høyde, kan justeres etter behov */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 100%; /* Full bredde av .imageWrapper */
+    height: 500px; /* Spesifikk høyde */
+    object-fit: cover; /* Fyll beholderen, beskjær overskudd */
+  }
   

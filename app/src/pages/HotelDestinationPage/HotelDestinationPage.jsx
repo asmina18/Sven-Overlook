@@ -1,8 +1,8 @@
 import { Title } from "../../components/Title/Title";
 import { CountryList } from "../../components/Destination/CountryList";
-import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 import { Breadcrumbs } from "../../components/Breadcrumbs/Breadcrumbs";
+import { Country } from "../../components/Destination/Country";
 
 export const HotelDestinationPage = () => {
 
@@ -14,25 +14,26 @@ export const HotelDestinationPage = () => {
     setSelectedCountry(countrySlug);
   };
 
-
+  console.log(" er du selectedCoundtry", selectedCountry);
 
   return (
     <>
       <Title title="HOTELLER & DESTINATIONER " />
 
       <div>
-        <nav>
-          <NavLink to="/destinations/danmark" onClick={() => handleCountrySelect('danmark')}>Danmark</NavLink>
-          <NavLink to="/destinations/sverige" onClick={() => handleCountrySelect('sverige')}>Sverige</NavLink>
-          <NavLink to="/destinations/norge" onClick={() => handleCountrySelect('norge')}>Norge</NavLink>
-          <NavLink to="/destinations/findland" onClick={() => handleCountrySelect('findland')}>Findland</NavLink>
-          <NavLink to="/destinations/tyskland" onClick={() => handleCountrySelect('tyskland')}>Tyskland</NavLink>
-          <NavLink to="/destinations/polen" onClick={() => handleCountrySelect('polen')}>Polen</NavLink>
-
+        <nav> 
+          <ul>
+            <li onClick={() => handleCountrySelect('danmark')}>Danmark</li>
+            <li onClick={() => handleCountrySelect('sverige')}>Sverige</li>
+            <li onClick={() => handleCountrySelect('norge')}>Norge</li>
+            <li onClick={() => handleCountrySelect('findland')}>Findland</li>
+            <li onClick={() => handleCountrySelect('tyskland')}>Tyskland</li>
+            <li onClick={() => handleCountrySelect('polen')}>Polen</li>
+          </ul>
         </nav>
         <Breadcrumbs items={breadcrumbs} />
+        <Country selectedCountry={selectedCountry} />
         <CountryList selectedCountry={selectedCountry} />
-        {/* ...другие компоненты, которые зависят от selectedCountry... */}
       </div>
 
     </>

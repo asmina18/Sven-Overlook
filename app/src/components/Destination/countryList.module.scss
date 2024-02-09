@@ -1,0 +1,62 @@
+@import url(../../GlobalStyle.module.scss);
+
+.countryListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; // Padding rundt hele containeren
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-family: var(--font);
+    font-size: 1rem;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        gap: 20px; // Legger til mellomrom mellom listeelementene
+        width: 80%;
+        margin: auto;
+
+    }
+
+    li {
+        width: calc(33.333% - 20px); // Justerer bredden for å opprette plass for mellomrommet
+        position: relative; // Nødvendig for posisjonering av bildeteksten
+        margin-bottom: 3px; // Mellomrom mellom radene
+        text-align: start;
+
+        img {
+            width: 100%;
+            object-fit: cover; // Sørger for at bildet dekker området, kan beskjære bildet
+        }
+    }
+
+    .countryFigure {
+
+        margin: 0;
+        position: relative; // Nødvendig for absolutt posisjonering av bildeteksten
+    }
+
+    .countryCaption {
+        position: absolute;
+        bottom: 0; // Plasserer bildeteksten nederst i bildet
+        left: 0;
+        right: 0;
+        background: var(--white); // Hvit bakgrunn for bildeteksten
+        padding: 10px 15px; // Polstring inni bildeteksten
+
+        h3,
+        p {
+            margin: 0; // Fjerner standardmargen
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .countryListContainer li {
+        width: 100%; // Для мобильных устройств элементы списка на всю ширину
+        margin-bottom: 20px; // Увеличиваем пространство между элементами
+    }
+}

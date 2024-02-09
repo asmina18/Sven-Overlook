@@ -10,7 +10,7 @@ mkdir components layout hooks pages
 for component in Nav Header Footer Title ; do
   mkdir components/$component
   touch components/$component/$component.jsx
-  touch components/$component/${component,,}.module.scss
+  touch components/$component/${component}.module.scss
 done
 
 # Создание MainLayout в layout
