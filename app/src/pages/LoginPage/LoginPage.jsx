@@ -1,8 +1,15 @@
-export function Login (){
+import { Signup } from "../../components/Login/Signup"
+import { Title } from "../../components/Title/Title"
 
-    return(
-        <h1>
-            her er Login
-        </h1>
+import { Login } from "../../components/Login/Login";
+export function LoginPage() {
+
+    return (
+        <>
+            <Title tiitle="Login" />
+            <Signup />
+            <Login />
+
+        </>
     )
 }

@@ -1,0 +1,123 @@
+@import url(../../GlobalStyle.module.scss);
+
+
+.loginFormStyle {
+    width: 20%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+}
+
+.loginFormStyle label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+}
+
+.loginFormStyle label input {
+    width: 100%;
+    height: 45px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+}
+
+.loginFormStyle .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Stil for knapperne */
+.loginFormStyle input[type="submit"],
+.loginFormStyle button[type="button"] {
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--red);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Stil for login knappen */
+.loginFormStyle input[type="submit"] {
+    background-color: var(--red);
+
+}
+
+/* Stil for den første knap, hvis gap ikke er understøttet */
+.loginFormStyle input[type="submit"] {
+    margin-right: 10px;
+}
+
+/* Stil for annuller knappen */
+.loginFormStyle button[type="button"] {
+    background-color: var(--red);
+}
+
+/* Hover-effekter for knapper */
+.loginFormStyle input[type="submit"]:hover,
+.loginFormStyle button[type="button"]:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.loginFormStyle label input:focus {
+    outline: none;
+}
+
+
+// /* Sørger for at knapperne rører ved hinanden */
+// .loginFormStyle input[type="submit"] + button[type="button"] {
+//     margin-left: 10px; 
+// }
+
+
+@media (max-width: 768px) {
+    .loginFormStyle {
+        width: 60%;
+        padding: 1.5rem;
+    }
+
+
+    .loginFormStyle .buttonContainer {
+        gap: 8px;
+    }
+
+    .loginFormStyle input[type="submit"],
+    .loginFormStyle button[type="button"] {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginFormStyle {
+        width: 80%;
+        padding: 1rem;
+    }
+
+
+    .loginFormStyle .buttonContainer {
+        gap: 5px;
+    }
+
+    .loginFormStyle input[type="submit"],
+    .loginFormStyle button[type="button"] {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}

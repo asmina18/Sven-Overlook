@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MainLayout } from "./layout/MainLayout/MainLayout"
 import { HomePage } from "./pages/HomePage/HomePage";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
-import { Login } from "./pages/LoginPage/LoginPage";
+import {LoginPage } from "./pages/LoginPage/LoginPage";
 import { HotelDestinationPage } from "./pages/HotelDestinationPage/HotelDestinationPage";
 import { RoomPage } from "./pages/RoomPage/Roompage";
 import { ReservationPage } from "./pages/ReservationPage/ReservationPage";
@@ -23,7 +23,7 @@ function App() {
             {/* ⁡⁣⁢⁣          Index route render automatisk HomePage for rodstien. ⁡ */}
             <Route index element={<HomePage />} />
             {/* ⁡⁣⁢⁣   Definerer ruter for de andre sider i appen. Hver sti er knyttet til en specifik sidekomponent. ⁡ */}
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<LoginPage />} />
             <Route path="/hotel" element={<HotelDestinationPage />} />
             <Route path="/room" element={<RoomPage />} />
             <Route path="/reservation" element={<ReservationPage />} />

@@ -10,7 +10,7 @@ export function Breadcrumbs({ items }) {
                         <li key={index}>
                             {item}
                             {index !== items.length - 1 && <span> &gt; </span>} 
-                            {/*​‌‍‌⁡⁣⁢⁡⁢⁢⁣ Efter hvert item tjekker denne ternære operation, om det aktuelle element er det sidste i listen. Hvis ikke, tilføjer den en separator  (>),⁡​ */}
+                            ⁡⁢⁣⁣{/*​‌‍‌ Efter hvert item tjekker denne ternære operation, om det aktuelle element er det sidste i listen. Hvis ikke, tilføjer den en separator  (>),​ */}⁡
                         </li>
                     )
                 })}
