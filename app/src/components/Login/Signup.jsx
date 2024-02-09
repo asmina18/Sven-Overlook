@@ -44,10 +44,11 @@ export function Signup() {
             console.error(error);
         }
     }
+
     
     // Funktion til at håndtere annulleringsanmodninger.
     function handleCancel() {
-        console.log('Annullering anmodet'); /
+        console.log('Annullering anmodet'); 
     }
     
     return (
